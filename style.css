@@ -46,4 +46,17 @@ body {
 .links {
   display: flex;
   flex-direction: row !important;
+  cursor: pointer;
+}
+
+.links {
+  transition: transform 0.2s ease-out;
+}
+
+.links:hover {
+  transform: scale(1.2);
+}
+
+.links {
+  filter: brightness(0) invert(1);
 }
