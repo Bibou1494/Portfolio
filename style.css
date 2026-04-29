@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
+body {
+  background-color: rgb(58, 58, 58);
+  font-family: "Google Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-ct {
+  width: fit-content;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('/src/background.png');
+}
+
+.banner {
+  position: relative;
+  overflow: visible;
+}
+
+#banner-img {
+  border-radius: 15px;
+  border: 3px solid grey;
+  margin: 5px;
+}
+
+#pdp {
+  position: absolute;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  bottom: -60px;
+  left: 25px;
+  border: 3px solid grey;
+}
+.username {
+  font-weight: 700;
+  color: white;
+  text-shadow: 0 0 1px rgb(0, 0, 0), 0 0 10px rgb(0, 0, 0), 0 0 20px cyan;
+}
+
+.links {
+  display: flex;
+  flex-direction: row !important;
+}
