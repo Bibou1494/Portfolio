@@ -47,20 +47,18 @@ body {
   display: flex;
   flex-direction: row !important;
   cursor: pointer;
-}
-
-.links {
-  transition: transform 0.2s ease-out;
-}
-
-.links:hover {
-  transform: scale(1.2);
-}
-
-.links {
   filter: brightness(0) invert(1);
 }
 
+.links a {
+  padding: 3px;
+}
+
 .links img {
+  transition: transform 0.2s ease-out;
   filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4))
+}
+
+.links img:hover {
+  transform: scale(1.2);
 }
