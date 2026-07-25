@@ -1,5 +1,9 @@
 {
   "m.homeserver": {
-    "base_url": "https://matrix.gdmcplayer.dpdns.org"
+    "base_url": "https://matrix.gdmcplayer.dpdns.org/"
+  },
+  "org.matrix.msc2965.authentication": {
+    "issuer": "https://auth.gdmcplayer.dpdns.org/",
+    "account": "https://auth.gdmcplayer.dpdns.org/account/"
   }
 }
