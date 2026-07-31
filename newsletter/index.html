@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GDMC</title>
+  <meta name="keywords" content="gdmc, portfolio, dev, serveur, proxmox">
+  <meta name="description" content="J'ai la flemme de faire cet description, ouvre le site au pire?">
+  <link rel="stylesheet" href="/style.css">
+  <meta property="og:title" content="GDMC Portfolio">
+  <meta property="og:description" content="J'ai la flemme de faire cet description, ouvre le site au pire?">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#a855f7">
+</head>
+<body>
+  <div class="nl-ct">
+    <h1 class="title">Newsletter</h1>
+    <div class="content">
+      Subscribe to my newsletter, to be informed<br>
+      of any new projects I release.<br>
+			<h2>
+				Subscribing to the newsletter has been paused<br>
+				as my email provider has suspended my account
+			</h2>
+      <!-- <input type="email" placeholder="email" id="email">
+      <button onclick="addEmailToNewsletter()">Submit</button>
+      <p id="feedback"></p> -->
+    </div>
+  </div>
+
+  <script>
+
+    async function addEmailToNewsletter() {
+      const emailInput = document.getElementById("email");
+      const feedback = document.getElementById("feedback");
+      const email = emailInput.value.trim();
+
+      if (!document.getElementById("email").checkValidity()) {
+        feedback.textContent = "Invalid email";
+        feedback.style.color = "red";
+        return;
+      }
+
+      feedback.textContent = "Registering...";
+      feedback.style.color = "inherit";
+
+      try {
+        const response = await fetch("/api/newsletter", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({ email })
+        });
+
+        if (!response.ok) {
+          throw new Error("Server error");
+        }
+
+        feedback.textContent = "Subscribed to newsletter";
+        feedback.style.color = "green";
+        emailInput.value = "";
+
+      } catch (error) {
+        console.error(error);
+        feedback.textContent = "An error has occured, try again.";
+        feedback.style.color = "red";
+      }
+    }
+  </script>
+</body>
+</html>

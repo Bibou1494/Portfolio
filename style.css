@@ -17,6 +17,17 @@ body {
   background-image: url('/src/background.png');
 }
 
+.nl-ct {
+  width: fit-content;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('/src/background.png');
+	padding: 15px;
+}
+
 .banner {
   position: relative;
   overflow: visible;
@@ -44,6 +55,18 @@ body {
 }
 
 .description {
+  font-weight: 500;
+	color: white;
+  text-shadow: 0 0 1px rgb(0, 0, 0), 0 0 10px rgb(0, 0, 0), 0 0 20px cyan;
+}
+
+.title {
+  font-weight: 700;
+	color: white;
+  text-shadow: 0 0 1px rgb(0, 0, 0), 0 0 10px rgb(0, 0, 0), 0 0 20px cyan;
+}
+
+.content {
   font-weight: 500;
 	color: white;
   text-shadow: 0 0 1px rgb(0, 0, 0), 0 0 10px rgb(0, 0, 0), 0 0 20px cyan;
