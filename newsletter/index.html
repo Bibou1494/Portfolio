@@ -49,13 +49,21 @@
           body: JSON.stringify({ email })
         });
 
+				const result = await response.json();
+
         if (!response.ok) {
           throw new Error("Server error");
         }
 
-        feedback.textContent = "Subscribed to newsletter";
-        feedback.style.color = "green";
-        emailInput.value = "";
+				if (result.status === "already_subscribed") {
+					feedback.textContent = "You are already subscribed";
+					feedback.style.color = "orange";
+					emailInput.value = "";
+				} else if (response.ok) {
+					feedback.textContent = "Subscribed to newsletter";
+					feedback.style.color = "green";
+					emailInput.value = "";
+				}
 
       } catch (error) {
         console.error(error);
