@@ -5,9 +5,9 @@
   "org.matrix.msc2965.authentication": {
     "issuer": "https://auth.gdmcplayer.dpdns.org/",
     "account": "https://auth.gdmcplayer.dpdns.org/account/"
-  }
+  },
 	"cc.etke.ketesa": {
     "restrictBaseUrl": "https://matrix.gdmcplayer.dpdns.org",
-		"externalAuthProvider": true
+    "externalAuthProvider": true
 	}
 }
