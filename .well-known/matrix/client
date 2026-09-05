@@ -9,5 +9,5 @@
   "cc.etke.ketesa": {
     "restrictBaseUrl": "https://matrix.gdmcplayer.dpdns.org",
     "externalAuthProvider": true
-	}
+  }
 }
