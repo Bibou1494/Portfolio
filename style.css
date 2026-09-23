@@ -11,9 +11,11 @@ body {
 .profile-ct {
   display: flex;
   flex-direction: column;
-  width: fit-content;
+  width: 550px;
   border-radius: 15px;
   gap: 10px;
+	word-wrap: break-word;
+	max-width: 100%;
 }
 
 .nl-ct {
