@@ -61,7 +61,7 @@ body {
 }
 
 .lastfm {
-  /* display: flex;
-  flex-direction: column !important; */
+  display: flex;
+  flex-direction: column !important;
   font-weight: 300 !important;
 }
