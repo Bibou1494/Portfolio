@@ -8,24 +8,17 @@ body {
   align-items: center;
 }
 
-.wrapper {
+.profile-ct {
   display: flex;
   flex-direction: column;
-}
-
-.profile-ct {
   width: fit-content;
   border-radius: 15px;
-  /* display: flex;
-  flex-direction: column; */
+  gap: 10px;
 }
 
 .nl-ct {
   width: fit-content;
   border-radius: 15px;
-  /* display: flex;
-  flex-direction: column; */
-	padding: 15px;
 }
 
 .username {
@@ -43,13 +36,7 @@ body {
   flex-direction: row !important;
   cursor: pointer;
   filter: brightness(0) invert(1);
-  width: 50px;
-  height: 50px;
-	padding: 10px;
-}
-
-.links a {
-  padding: 3px;
+  gap: 15px;
 }
 
 .links img {
