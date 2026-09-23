@@ -12,8 +12,6 @@ body {
   border-radius: 15px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 .nl-ct {
@@ -21,8 +19,6 @@ body {
   border-radius: 15px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
 	padding: 15px;
 }
 
@@ -35,13 +31,11 @@ body {
 .username {
   font-weight: 700;
 	color: white;
-  text-shadow: 0 0 1px rgb(0, 0, 0), 0 0 10px rgb(0, 0, 0), 0 0 20px cyan;
 }
 
 .description {
   font-weight: 500;
 	color: white;
-  text-shadow: 0 0 1px rgb(0, 0, 0), 0 0 10px rgb(0, 0, 0), 0 0 20px cyan;
 }
 
 .links {
@@ -58,9 +52,14 @@ body {
 
 .links img {
   transition: transform 0.2s ease-out;
-  filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4))
 }
 
 .links img:hover {
   transform: scale(1.1);
+}
+
+.lastfm {
+  display: flex;
+  flex-direction: column !important;
+  font-weight: 300 !important;
 }
