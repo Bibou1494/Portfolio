@@ -5,20 +5,26 @@ body {
   font-family: "Google Sans", sans-serif;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 .profile-ct {
   width: fit-content;
   border-radius: 15px;
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
 }
 
 .nl-ct {
   width: fit-content;
   border-radius: 15px;
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
 	padding: 15px;
 }
 
@@ -39,8 +45,8 @@ body {
 }
 
 .links {
-  display: flex;
-  flex-direction: row !important;
+  /* display: flex;
+  flex-direction: row !important; */
   cursor: pointer;
   filter: brightness(0) invert(1);
 	padding: 10px;
@@ -59,7 +65,7 @@ body {
 }
 
 .lastfm {
-  display: flex;
-  flex-direction: column !important;
+  /* display: flex;
+  flex-direction: column !important; */
   font-weight: 300 !important;
 }
