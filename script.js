@@ -15,7 +15,7 @@ async function nowplaying() {
   const track = await response.json()
   
   if(track.nowPlaying) {
-    title.textContent = `Now playing: ${track.name}`;
+    title.textContent = `Now playing(what i'm listening to): ${track.name}`;
     artist.textContent = `By: ${track.artist}`;
   }
 }
