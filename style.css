@@ -18,6 +18,12 @@ body {
 	max-width: 100%;
 }
 
+@media (max-width: 550px) {
+	.profile-ct {
+		width: fit-content;
+	}
+}
+
 .nl-ct {
   width: fit-content;
   border-radius: 15px;
